@@ -157,13 +157,16 @@ const editNote = (note) =>{
     document.querySelector("#input-content").value = note.content;
     modalView.style.display = "none";
     modal.style.display = "block";
-
-
+}
+const userName = window.prompt("Qual é seu nome?", "");
+if (userName) {
+    const welcomeMessage = `Bem-vindo de volta, ${userName}!`;
+    window.alert(welcomeMessage);
 }
 
 
-listNotes();
 
+listNotes();
 
 
 
